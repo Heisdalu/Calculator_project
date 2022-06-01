@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <header>
+        <h3 id="calc-logo">Calc</h3>
+
+        <div id="modes">
+          <h5 id="tag">THEME</h5>
+
+          <div id="modes-box">
+            <div id="mode-count">
+              <span class="span">1</span>
+              <span class="span">2</span>
+              <span class="span">3</span>
+            </div>
+
+            <div id="mode-detector">
+              <!-- <span></span>
+              <span></span>
+              <span></span> -->
+              <div class="dot-button dot-active" id="dot1"></div>
+              <div class="dot-button" id="dot2"></div>
+              <div class="dot-button" id="dot3"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="result">
+        <div class="first active">0</div>
+        <!-- <div class="secondNum"></div> -->
+      </section>
+
+      <section id="keys">
+        <div class="all integer">7</div>
+        <div class="all integer">8</div>
+        <div class="all integer">9</div>
+        <div class="all edit" id="delete">DEL</div>
+        <div class="all integer">4</div>
+        <div class="all integer">5</div>
+        <div class="all integer">6</div>
+        <div class="all operator">+</div>
+        <div class="all integer">1</div>
+        <div class="all integer">2</div>
+        <div class="all integer">3</div>
+        <div class="all operator">-</div>
+        <div class="all integer dot">.</div>
+        <div class="all integer">0</div>
+        <div class="all operator">/</div>
+        <div class="all operator">x</div>
+        <div class="all edit" id="reset">Reset</div>
+        <div class="all" id="equal">=</div>
+      </section>
+    </div>
+
+
+
+
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Divine Obi</a>.
+  </div>
+
+
+  <script src="./script.js"></script>
+  </body>
+</html>
