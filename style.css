@@ -171,6 +171,11 @@ header {
   cursor: pointer;
 }
 
+.all:active{
+  color: white;
+  background-color: black;
+
+}
 .edit {
   background-color: hsl(225, 21%, 49%);
   box-shadow: 0px 3px 1px hsl(224, 28%, 35%);
