@@ -38,6 +38,7 @@ function operations(operator) {
   switch (operator) {
     case "x":
       const answer1 = Number(firstNum) * Number(secondNum)
+      console.log(answer1);
       show_Display.textContent = answer1
       firstNum = answer1
       secondNum = ""
@@ -79,15 +80,17 @@ function delete_Operation() {
   if (activeBtn) {
     firstNum = firstNum.slice(0, firstNumLength--)
     show_Display.textContent = firstNum
+
     if (firstNum.length <= 0) {
-      firstNum = ""
+      firstNum = "0"
       show_Display.textContent = "0"
     }
+    console.log(firstNum);
   } else {
     secondNum = secondNum.slice(0, secondNum_Length--)
     show_Display.textContent = secondNum
     if (secondNum.length <= 0) {
-      secondNum = ""
+      secondNum = "0"
       show_Display.textContent = 0
     }
   }
@@ -111,7 +114,8 @@ edit_Btn.forEach((el) => {
 // equal button to get final answer
 equalBtn.addEventListener('click' , () => {
   if(firstNum && secondNum) {
-    const final_Answer = eval(`${Number(firstNum)}${lastOperator}${Number(secondNum)}`)
+    const final_Answer = eval(`${Number(firstNum)}${lastOperator === 'x' ? '*' : lastOperator}${Number(secondNum)}`)
+
     firstNum = final_Answer
       show_Display.textContent = final_Answer;
       secondNum = ""
@@ -148,7 +152,6 @@ function changeColor_Mode(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12,c13)
 }
 
 dotButton.forEach((el) => {
-  console.log(el);
   el.addEventListener("click", (e) => {
     document.querySelectorAll(".dot-button").forEach((item) => {
       item.classList.remove("dot-active")
