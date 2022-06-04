@@ -27,4 +27,4 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 ## Author
 
-- Twitter - [@yourusername](https://www.twitter.com/Dhevine_0X)
+- Twitter - [@Dhevine_0X](https://www.twitter.com/Dhevine_0X)
